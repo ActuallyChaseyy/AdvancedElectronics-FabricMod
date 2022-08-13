@@ -21,6 +21,8 @@ public class ModBlocks {
                     .jumpVelocityMultiplier(5)
                     .luminance(5)
             ), ItemGroup.REDSTONE);
+    // Will rename Battery Block to Battery after I remove battery item tmrw, also will remove stupid shit I was
+    // playing with earlier, i.e jumpv
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name,block,group);

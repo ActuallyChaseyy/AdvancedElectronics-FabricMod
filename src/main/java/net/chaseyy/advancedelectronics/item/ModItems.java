@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item BATTERY = registerItems("battery",
-            new Item(new FabricItemSettings().group(ItemGroup.REDSTONE)));
+            new Item(new FabricItemSettings().group(ItemGroup.REDSTONE))); // Will remove this in an update tmrw, using as a test item :)
 
 
     private static Item registerItems(String name, Item item) {
