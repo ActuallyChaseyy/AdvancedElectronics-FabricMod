@@ -8,10 +8,10 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+@SuppressWarnings("ALL")
 public class ModBlocks {
 
     public static final Block BATTERY_BLOCK = registerBlock("battery_block",

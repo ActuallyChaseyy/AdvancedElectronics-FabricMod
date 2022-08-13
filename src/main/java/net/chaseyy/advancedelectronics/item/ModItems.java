@@ -7,6 +7,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.Identifier;
 
+@SuppressWarnings("ALL")
 public class ModItems {
 
     public static final Item BATTERY = registerItems("battery",
