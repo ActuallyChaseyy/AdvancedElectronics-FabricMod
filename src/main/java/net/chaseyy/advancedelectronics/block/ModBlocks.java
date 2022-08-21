@@ -14,15 +14,19 @@ import net.minecraft.util.registry.Registry;
 @SuppressWarnings("ALL")
 public class ModBlocks {
 
-    public static final Block BATTERY_BLOCK = registerBlock("battery_block",
+    public static final Block TEST_BLOCK_BATTERY = registerBlock("test_block",
             new Block(FabricBlockSettings.of(Material.METAL)
                     .strength(6f)
                     .requiresTool()
-                    .jumpVelocityMultiplier(5)
                     .luminance(5)
             ), ItemGroup.REDSTONE);
-    // Will rename Battery Block to Battery after I remove battery item tmrw, also will remove stupid shit I was
-    // playing with earlier, i.e jumpv
+
+    public static final Block GREEN_BATTERY_BLOCK = registerBlock("green_battery_block",
+            new Block(FabricBlockSettings.of(Material.METAL)
+                    .strength(6f)
+                    .requiresTool()
+                    .luminance(5)
+            ), ItemGroup.REDSTONE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name,block,group);
@@ -31,7 +35,7 @@ public class ModBlocks {
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.ITEM, new Identifier(AdvancedElectronics.MODID, name),
-                new BlockItem(block, new FabricItemSettings().group(ItemGroup.REDSTONE)));
+                new BlockItem(block, new FabricItemSettings().group(group)));
     }
 
     public static void registerModBlocks() {

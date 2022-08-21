@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "advancedelectronics:block/battery_block"
+    "all": "advancedelectronics:block/test_block"
   }
 }
